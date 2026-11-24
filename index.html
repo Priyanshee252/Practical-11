@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FoodExpress - fast and fresh online food ordering">
+  <title>FoodExpress - Online Food Ordering</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top site-nav">
+    <div class="container">
+      <a class="navbar-brand brand fs-3" href="#home">&#127829; FoodExpress</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto me-lg-3 mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button type="button" class="btn btn-brand position-relative">
+          &#128722; Cart
+          <span id="cartCount" class="cart-badge badge rounded-pill bg-dark">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <span class="hero-tag">&#9889; Delivery in 30 minutes</span>
+          <h1 class="hero-title">Hungry? Order your favourite food in a few taps.</h1>
+          <p class="hero-text">Fresh meals from the best local kitchens, delivered hot to your door.</p>
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+            <a href="#featured" class="btn btn-light btn-lg fw-semibold">Order Now</a>
+            <a href="#categories" class="btn btn-outline-light btn-lg">Browse Menu</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>30 min</strong>
+              <span>Avg. delivery</span>
+            </div>
+            <div>
+              <strong>500+</strong>
+              <span>Dishes</span>
+            </div>
+            <div>
+              <strong>4.7 &#11088;</strong>
+              <span>Rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-card">
+            <span>&#127828;</span>
+            <span>&#127829;</span>
+            <span>&#127836;</span>
+            <span>&#127835;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="categories" class="section">
+    <div class="container">
+      <h2 class="sec-title">Food Categories</h2>
+      <p class="sec-sub">Pick what you are craving today</p>
+      <div class="cat-strip">
+        <a href="#featured" class="cat-chip"><span class="cat-icon">&#127829;</span>Pizza</a>
+        <a href="#featured" class="cat-chip"><span class="cat-icon">&#127828;</span>Burgers</a>
+        <a href="#featured" class="cat-chip"><span class="cat-icon">&#127836;</span>Noodles</a>
+        <a href="#featured" class="cat-chip"><span class="cat-icon">&#127835;</span>Sushi</a>
+        <a href="#featured" class="cat-chip"><span class="cat-icon">&#127856;</span>Desserts</a>
+        <a href="#featured" class="cat-chip"><span class="cat-icon">&#129380;</span>Drinks</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured" class="section section-white">
+    <div class="container">
+      <h2 class="sec-title">Featured Items</h2>
+      <p class="sec-sub">Most loved by our customers</p>
+      <div class="row row-cols-1 row-cols-lg-2 g-4">
+        <div class="col">
+          <article class="food-card">
+            <div class="food-img tint-orange">&#127829;</div>
+            <div class="food-body">
+              <h3 class="food-name">Margherita Pizza</h3>
+              <p class="food-desc">Classic tomato, mozzarella and fresh basil.</p>
+              <div class="food-row">
+                <span class="price">&#8377;249</span>
+                <span class="rate">&#11088; 4.6</span>
+              </div>
+              <button type="button" class="btn btn-brand btn-add" data-name="Margherita Pizza">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="food-card">
+            <div class="food-img tint-yellow">&#127828;</div>
+            <div class="food-body">
+              <h3 class="food-name">Double Cheese Burger</h3>
+              <p class="food-desc">Two juicy patties with melted cheese.</p>
+              <div class="food-row">
+                <span class="price">&#8377;199</span>
+                <span class="rate">&#11088; 4.4</span>
+              </div>
+              <button type="button" class="btn btn-brand btn-add" data-name="Double Cheese Burger">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="food-card">
+            <div class="food-img tint-red">&#127836;</div>
+            <div class="food-body">
+              <h3 class="food-name">Veg Hakka Noodles</h3>
+              <p class="food-desc">Wok-tossed noodles with crunchy veggies.</p>
+              <div class="food-row">
+                <span class="price">&#8377;179</span>
+                <span class="rate">&#11088; 4.3</span>
+              </div>
+              <button type="button" class="btn btn-brand btn-add" data-name="Veg Hakka Noodles">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="food-card">
+            <div class="food-img tint-green">&#127835;</div>
+            <div class="food-body">
+              <h3 class="food-name">Sushi Platter</h3>
+              <p class="food-desc">Assorted rolls with soy and wasabi.</p>
+              <div class="food-row">
+                <span class="price">&#8377;449</span>
+                <span class="rate">&#11088; 4.7</span>
+              </div>
+              <button type="button" class="btn btn-brand btn-add" data-name="Sushi Platter">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="food-card">
+            <div class="food-img tint-amber">&#127790;</div>
+            <div class="food-body">
+              <h3 class="food-name">Chicken Tacos</h3>
+              <p class="food-desc">Soft shells with spicy chicken and salsa.</p>
+              <div class="food-row">
+                <span class="price">&#8377;229</span>
+                <span class="rate">&#11088; 4.5</span>
+              </div>
+              <button type="button" class="btn btn-brand btn-add" data-name="Chicken Tacos">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="food-card">
+            <div class="food-img tint-pink">&#127856;</div>
+            <div class="food-body">
+              <h3 class="food-name">Chocolate Cake</h3>
+              <p class="food-desc">Rich, moist and loaded with chocolate.</p>
+              <div class="food-row">
+                <span class="price">&#8377;149</span>
+                <span class="rate">&#11088; 4.8</span>
+              </div>
+              <button type="button" class="btn btn-brand btn-add" data-name="Chocolate Cake">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="food-card">
+            <div class="food-img tint-orange">&#127839;</div>
+            <div class="food-body">
+              <h3 class="food-name">Crispy Fries</h3>
+              <p class="food-desc">Golden fries with peri-peri seasoning.</p>
+              <div class="food-row">
+                <span class="price">&#8377;99</span>
+                <span class="rate">&#11088; 4.2</span>
+              </div>
+              <button type="button" class="btn btn-brand btn-add" data-name="Crispy Fries">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="food-card">
+            <div class="food-img tint-blue">&#129380;</div>
+            <div class="food-body">
+              <h3 class="food-name">Fresh Mojito</h3>
+              <p class="food-desc">Mint, lime and a splash of soda.</p>
+              <div class="food-row">
+                <span class="price">&#8377;89</span>
+                <span class="rate">&#11088; 4.4</span>
+              </div>
+              <button type="button" class="btn btn-brand btn-add" data-name="Fresh Mojito">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="offers" class="section">
+    <div class="container">
+      <h2 class="sec-title">Promotional Offers</h2>
+      <p class="sec-sub">Save more on every order</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="promo promo-purple">
+            <p class="promo-tag">First order</p>
+            <h3 class="promo-title">50% OFF</h3>
+            <p class="promo-text">Use code <span class="code">WELCOME50</span> on your first order.</p>
+            <a href="#featured" class="btn btn-light fw-semibold">Claim Offer</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="promo promo-green">
+            <p class="promo-tag">Weekend special</p>
+            <h3 class="promo-title">Free Delivery</h3>
+            <p class="promo-text">On all orders above &#8377;499 every Saturday and Sunday.</p>
+            <a href="#featured" class="btn btn-light fw-semibold">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="container">
+      <h2 class="sec-title">How It Works</h2>
+      <p class="sec-sub">Three simple steps to your meal</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-icon">&#128241;</div>
+            <h3 class="step-title">Choose</h3>
+            <p class="step-text">Browse categories and pick your favourite dishes.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-icon">&#128179;</div>
+            <h3 class="step-title">Pay</h3>
+            <p class="step-text">Check out securely with UPI, card or cash on delivery.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-icon">&#128757;</div>
+            <h3 class="step-title">Enjoy</h3>
+            <p class="step-text">Get your hot meal delivered in about 30 minutes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="sec-title">Contact Us</h2>
+      <p class="sec-sub">We would love to hear from you</p>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <form id="contactForm" class="box needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="contactName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="contactName" required minlength="2">
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="contactEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="contactEmail" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <label for="contactTopic" class="form-label">Topic</label>
+                <select class="form-select" id="contactTopic" required>
+                  <option value="">Choose...</option>
+                  <option>Order issue</option>
+                  <option>Feedback</option>
+                  <option>Partnership</option>
+                </select>
+                <div class="invalid-feedback">Please choose a topic.</div>
+              </div>
+              <div class="col-12">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="contactMessage" rows="4" required minlength="10"></textarea>
+                <div class="invalid-feedback">Message must be at least 10 characters.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-brand w-100">Send Message</button>
+              </div>
+              <div class="col-12">
+                <div id="formAlert" class="alert alert-success d-none mb-0" role="alert">Thank you! Your message has been sent.</div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5">
+          <div class="info-panel">
+            <h3 class="box-title">Get in touch</h3>
+            <p>&#128205; 12 Market Road, Rajkot, Gujarat</p>
+            <p>&#128222; +91 98765 43210</p>
+            <p>&#9993; support@foodexpress.example</p>
+            <p class="mb-0">&#128339; Open daily, 10:00 AM - 11:30 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <p class="foot-brand">&#127829; FoodExpress</p>
+          <p class="foot-text">Fast, fresh and delivered with care.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h4 class="foot-heading">Explore</h4>
+          <ul class="foot-links">
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#offers">Offers</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h4 class="foot-heading">Support</h4>
+          <ul class="foot-links">
+            <li><a href="#contact">Contact Us</a></li>
+            <li>+91 98765 43210</li>
+            <li>support@foodexpress.example</li>
+          </ul>
+        </div>
+      </div>
+      <p class="foot-copy">&copy; 2026 FoodExpress Pvt. Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3 toast-layer">
+    <div id="cartToast" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toastText"></div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <div id="bpBadge" class="badge bg-dark px-3 py-2">
+    <span class="d-block d-sm-none">XS &lt;576px</span>
+    <span class="d-none d-sm-block d-md-none">SM &ge;576px (mobile landscape)</span>
+    <span class="d-none d-md-block d-lg-none">MD &ge;768px (tablet)</span>
+    <span class="d-none d-lg-block d-xl-none">LG &ge;992px (small desktop)</span>
+    <span class="d-none d-xl-block d-xxl-none">XL &ge;1200px (desktop)</span>
+    <span class="d-none d-xxl-block">XXL &ge;1400px (large desktop)</span>
+    <span id="viewportSize" class="d-block opacity-75"></span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
